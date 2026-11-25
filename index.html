@@ -495,6 +495,60 @@ if(isFinePointer){
   });
 }
 </script>
+  <script>
+/* ===== Behance auto-update add-on =====
+   Adds NEW projects from projects.json to your existing project cards.
+   Your current cards and code are left exactly as they are. */
+(function(){
+  var grid=document.getElementById('pjGrid')||document.querySelector('.behance-grid');
+  if(!grid) return;
+  var idOf=function(u){var m=String(u||'').match(/\/gallery\/(\d+)/);return m?m[1]:'';};
+  var cards=function(){return Array.prototype.filter.call(grid.children,function(el){return el.querySelector&&el.querySelector('img');});};
+  var FILTERS=['ux','brand','social','graphic'];
+  fetch('projects.json',{cache:'no-store'})
+    .then(function(r){return r.ok?r.json():Promise.reject();})
+    .then(function(d){
+      var list=(Array.isArray(d)?d:(d.projects||[])).filter(function(p){return p&&p.url&&p.image&&p.title&&/^https?:\/\//i.test(p.url);});
+      var have={}; cards().forEach(function(c){have[idOf(c.getAttribute('href'))]=1;});
+      var fresh=list.filter(function(p){return !have[String(p.id||idOf(p.url))];});
+      if(!fresh.length) return;
+      var existing=cards();
+      var tpl=existing.filter(function(c){return !c.classList.contains('pj-feature');})[0]||existing[0];
+      if(!tpl) return;
+      var at=(existing[0]&&existing[0].classList.contains('pj-feature'))?1:0;
+      var added=[];
+      fresh.forEach(function(p,k){
+        var c=tpl.cloneNode(true);
+        c.setAttribute('href',p.url);
+        c.dataset.cat=FILTERS.indexOf(p.filter)>-1?p.filter:'graphic';
+        c.classList.remove('pj-feature','is-hidden');
+        c.classList.add('is-in','settled','is-visible');
+        c.style.transform=''; c.style.setProperty('--d','0s');
+        var inner=c.querySelector('.pj-inner'); if(inner) inner.style.transform='';
+        Array.prototype.forEach.call(c.querySelectorAll('.pj-star'),function(n){n.remove();});
+        var img=c.querySelector('img'); img.src=p.image; img.alt=p.alt||p.title; img.removeAttribute('srcset');
+        Array.prototype.forEach.call(c.querySelectorAll('.pj-cat,.behance-cat'),function(n){n.textContent=p.label||'';});
+        Array.prototype.forEach.call(c.querySelectorAll('.pj-name,.behance-name,.pj-ticker span'),function(n){n.textContent=p.title;});
+        grid.insertBefore(c,grid.children[at+k]||null);
+        added.push(c);
+      });
+      // renumber 01, 02, 03 ... and update the "Projects" counter
+      var all=cards();
+      all.forEach(function(c,i){var n=c.querySelector('.pj-idx'); if(n) n.textContent=(i<9?'0':'')+(i+1);});
+      var stat=document.querySelector('#pjCount b[data-to]');
+      if(stat){stat.dataset.to=all.length; if(stat.textContent!=='0') stat.textContent=all.length;}
+      // make the filter buttons also show/hide the new cards
+      var bar=document.getElementById('pjFilters');
+      if(bar) bar.addEventListener('click',function(e){
+        var b=e.target.closest('button'); if(!b) return;
+        var f=b.dataset.f;
+        added.forEach(function(c){c.classList.toggle('is-hidden',!(f==='all'||c.dataset.cat===f));});
+      });
+    })
+    .catch(function(){});
+})();
+</script>
+
 
 </body>
 </html>
