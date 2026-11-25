@@ -1,0 +1,78 @@
+{
+  "updated": "2026-11-25T00:00:00.000Z",
+  "projects": [
+    {
+      "id": "254082653",
+      "url": "https://www.behance.net/gallery/254082653/PawSOS-UX-case-study",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/21a9a0254082653.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png",
+      "alt": "PawSOS UX case study thumbnail",
+      "title": "PawSOS — UX case study",
+      "label": "UI / UX case study",
+      "filter": "ux",
+      "featured": true
+    },
+    {
+      "id": "254721287",
+      "url": "https://www.behance.net/gallery/254721287/Brew-And-Chew-A-hypothetical-branding",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/0d531a254721287.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png",
+      "alt": "Brew And Chew branding thumbnail",
+      "title": "Brew And Chew",
+      "label": "Branding — hypothetical",
+      "filter": "brand"
+    },
+    {
+      "id": "254320645",
+      "url": "https://www.behance.net/gallery/254320645/BIKANERVALA-rebranding",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/778bd1254320645.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png",
+      "alt": "BIKANERVALA rebranding thumbnail",
+      "title": "BIKANERVALA rebranding",
+      "label": "Rebranding",
+      "filter": "brand"
+    },
+    {
+      "id": "252142347",
+      "url": "https://www.behance.net/gallery/252142347/KOKO-Restaurant-creatives",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/0c7b32252142347.6a47b7db74815.jpg",
+      "alt": "KOKO Restaurant creatives thumbnail",
+      "title": "KOKO Restaurant creatives",
+      "label": "Social & brand creative",
+      "filter": "social"
+    },
+    {
+      "id": "254249129",
+      "url": "https://www.behance.net/gallery/254249129/LUXE-email-post",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/2de120254249129.Y3JvcCwxMDgxLDg0NSwwLDQxNw.png",
+      "alt": "LUXE email post thumbnail",
+      "title": "LUXE email post",
+      "label": "Email / digital design",
+      "filter": "social"
+    },
+    {
+      "id": "247971321",
+      "url": "https://www.behance.net/gallery/247971321/Advertisement",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/fa0297247971321.Y3JvcCwxMDgwLDg0NCwwLDExNw.png",
+      "alt": "Advertisement thumbnail",
+      "title": "Advertisement",
+      "label": "Advertising creative",
+      "filter": "social"
+    },
+    {
+      "id": "242544565",
+      "url": "https://www.behance.net/gallery/242544565/Event-poster",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/1bccd3242544565.696f68f35b8c0.jpg",
+      "alt": "Event poster thumbnail",
+      "title": "Event poster",
+      "label": "Poster design",
+      "filter": "graphic"
+    },
+    {
+      "id": "242538307",
+      "url": "https://www.behance.net/gallery/242538307/Infograhics",
+      "image": "https://mir-s3-cdn-cf.behance.net/projects/404/9edd62242538307.Y3JvcCwyMDI4LDE1ODcsMTEwLDA.png",
+      "alt": "Infographics thumbnail",
+      "title": "Infographics",
+      "label": "Infographic design",
+      "filter": "graphic"
+    }
+  ]
+}
