@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drishti Arora — UI/UX Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="scroll-progress"></div>
+<div id="cursor-dot"></div>
+<div id="cursor-label"></div>
+
+<header id="siteHeader">
+  <div class="wrap">
+    <nav>
+      <a href="#top" class="logo"><span class="dot"></span>Drishti Arora</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Say hello</a></li>
+        <li><a href="drishti-cv.pdf" id="navResumeBtn" class="nav-cta resume-btn" download=""><span class="resume-btn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg></span>Resume</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero cursor-zone" data-cursor="say hi ✦">
+    <svg class="doodle-star doodle-float-a" viewBox="0 0 40 40" fill="none"><path d="M20 2L23.5 15.5L37 19L23.5 22.5L20 36L16.5 22.5L3 19L16.5 15.5L20 2Z" stroke="var(--violet)" stroke-width="2" stroke-linejoin="round"/></svg>
+    <svg class="doodle-scribble doodle-float-b" viewBox="0 0 60 40" fill="none"><path d="M3 20C10 5 20 5 25 15C30 25 40 10 48 8C54 6.5 57 12 55 18" stroke="var(--coral)" stroke-width="2.5" stroke-linecap="round"/></svg>
+    <svg class="doodle-ring doodle-float-c" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="16" stroke="var(--line-strong)" stroke-width="2.5"/></svg>
+    <svg class="doodle-plus doodle-float-b" viewBox="0 0 24 24" fill="none"><path d="M12 3v18M3 12h18" stroke="var(--coral)" stroke-width="2.5" stroke-linecap="round"/></svg>
+
+    <div class="rotate-badge">
+      <svg class="rotate-badge-ring" viewBox="0 0 120 120">
+        <defs><path id="badgeCirclePath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+        <text font-size="8.6" letter-spacing="2.2" fill="var(--ink)">
+          <textPath href="#badgeCirclePath">✦ OPEN TO WORK ✦ UI/UX DESIGNER ✦ OPEN TO WORK ✦ UI/UX DESIGNER </textPath>
+        </text>
+      </svg>
+      <span class="rotate-badge-center">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+      </span>
+    </div>
+    <div class="wrap">
+      <div class="eyebrow-row">
+        <span class="eyebrow"><span class="pulse"></span>Open to UI/UX opportunities</span>
+      </div>
+
+      <div class="hero-name-frame" id="nameFrame">
+        <h1 id="heroName"></h1>
+      </div>
+
+      <p class="hero-sub">I'm a <strong class="doodle-highlight">UI/UX Designer<svg class="doodle-underline-svg" viewBox="0 0 200 16" preserveAspectRatio="none" fill="none"><path d="M2 10Q20 2 38 10T74 10T110 10T146 10T182 10" stroke="var(--violet)" stroke-width="3" stroke-linecap="round"/></svg></strong> based in Jalandhar, Punjab — currently pursuing an M.Sc. in Multimedia &amp; Design, and building interfaces rooted in <strong>user research, wireframing and visual storytelling.</strong></p>
+
+      <p class="hero-note tag-font">currently mapping the gap between users and the services meant for them ✦</p>
+
+      <div class="hero-meta">
+        <span class="chip">📍 Jalandhar, Punjab</span>
+        <span class="chip">🎓 M.Sc. Multimedia &amp; Design, LPU</span>
+        <span class="chip">🛠️ Figma · Photoshop · Illustrator</span>
+      </div>
+
+      <div class="hero-cta-row">
+        <svg class="doodle-arrow" viewBox="0 0 70 50" fill="none"><path d="M4 4C20 6 35 16 42 34" stroke="var(--ink)" stroke-width="2" stroke-linecap="round"/><path d="M30 32L42 34L38 22" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="doodle-arrow-label tag-font">worth a click</span>
+        <a href="drishti-cv.pdf" id="heroResumeBtn" class="hero-btn magnetic" download="">
+          <span class="hero-btn-shine"></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+          Download CV
+        </a>
+        <a href="#work" class="hero-btn-ghost magnetic">
+          View work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-cue"><span class="line"></span>Scroll</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track" id="marqueeTrack">
+      <!-- filled by JS (duplicated for seamless loop) -->
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <svg class="doodle-scribble doodle-float-c section-doodle" viewBox="0 0 60 40" fill="none"><path d="M3 20C10 5 20 5 25 15C30 25 40 10 48 8C54 6.5 57 12 55 18" stroke="var(--violet)" stroke-width="2.5" stroke-linecap="round"/></svg>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-tag tag-font">where I've worked</span>
+          <h2>Experience &amp; internships</h2>
+        </div>
+        <p class="section-desc">Two roles, two very different briefs — same instinct for clear, considered visual communication.</p>
+      </div>
+
+      <div class="exp-list">
+        <article class="exp-item reveal">
+          <div class="exp-period">JAN 2024 — FEB 2025</div>
+          <div>
+            <div class="exp-role">Video Editor</div>
+            <div class="exp-org">TFI Media Pvt. Ltd.</div>
+            <p class="exp-about">Focused on creating engaging videos, designing attractive graphics, and managing social media content to build a strong brand presence and audience connection.</p>
+            <ul class="exp-outcomes">
+              <li>Learned to edit videos in a clear, engaging way</li>
+              <li>Improved graphic design skills with better creativity and balance</li>
+              <li>Understood how social media works and how to grow engagement</li>
+              <li>Managed time effectively while handling multiple tasks</li>
+              <li>Adapted quickly to feedback and made necessary improvements</li>
+              <li>Built confidence working independently and within a team</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="exp-item reveal">
+          <div class="exp-period">NOV 2025 — JAN 2026</div>
+          <div>
+            <div class="exp-role">Graphic Designer <span style="color:var(--ink-faint);font-weight:400;font-size:15px;">— Internship</span></div>
+            <div class="exp-org">The Future Foundation</div>
+            <p class="exp-about">Focused on designing creative and meaningful visuals to support various initiatives and digital communication efforts within the organization.</p>
+            <ul class="exp-outcomes">
+              <li>Created impactful designs aligned with organizational goals</li>
+              <li>Adapted design styles to different project requirements</li>
+              <li>Collaborated with the team for clear visual communication</li>
+              <li>Managed multiple design tasks within deadlines</li>
+              <li>Improved creativity working on real-world social projects</li>
+              <li>Developed a professional approach to feedback and revisions</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / FEATURED ON BEHANCE -->
+  <section id="work">
+    <svg class="doodle-cursor doodle-float-a work-doodle-a" viewBox="0 0 30 32" fill="none"><path d="M4 2L26 15L15 17.5L11 28L4 2Z" stroke="var(--coral)" stroke-width="2" stroke-linejoin="round"/></svg>
+    <svg class="doodle-palette doodle-float-b work-doodle-b" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="16" stroke="var(--line-strong)" stroke-width="2"/><circle cx="20" cy="10" r="3" fill="var(--violet)"/><circle cx="29" cy="24" r="3" fill="var(--coral)"/><circle cx="11" cy="24" r="3" fill="var(--ink)"/></svg>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-tag tag-font">selected work</span>
+          <h2>Shown on Behance<svg class="heading-doodle" viewBox="0 0 150 14" fill="none"><path d="M2 8 Q 14 -1, 26 8 T 50 8 T 74 8 T 98 8 T 122 8 T 146 8" stroke="var(--violet)" stroke-width="3" stroke-linecap="round"/></svg></h2>
+        </div>
+        <p class="section-desc">Branding, UI/UX and visual work published on my Behance profile — click any piece to open it there. Includes the <strong style="color:var(--ink);">PawSOS</strong> case study, a research-first UX project mapping the gap between stranded animals and the agencies meant to help them.</p>
+      </div>
+
+      <div class="behance-intro reveal">
+        <span class="behance-badge">Bē</span>
+        <p>A running archive of case studies, campaigns and concept work — see the full profile at <a href="https://www.behance.net/drishtiarora8" target="_blank" rel="noopener">behance.net/drishtiarora8</a>.</p>
+      </div>
+
+      <div class="behance-grid reveal">
+        
+  <a class="behance-card cursor-zone" href="https://www.behance.net/gallery/258994421/Luxury-Evergreen-Escape" target="_blank" rel="noopener" data-cursor="view ↗">
+          <div class="behance-thumb">
+            <img src="assets/images/luxury-escape-cover.webp" alt="luxury-escape thumbnail" loading="lazy">
+            <span class="behance-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>View on Behance</span>
+          </div>
+          <div class="behance-body">
+            <span class="behance-cat">UI / UX</span>
+            <span class="behance-name">Luxury Evergreen Escape</span>
+          </div>
+        </a>
+        <a class="behance-card cursor-zone" href="https://www.behance.net/gallery/254082653/PawSOS-UX-case-study" target="_blank" rel="noopener" data-cursor="view ↗">
+          <div class="behance-thumb">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/21a9a0254082653.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png" alt="PawSOS UX case study thumbnail" loading="lazy">
+            <span class="behance-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>View on Behance</span>
+          </div>
+          <div class="behance-body">
+            <span class="behance-cat">UI / UX case study</span>
+            <span class="behance-name">PawSOS — UX case study</span>
+          </div>
+        </a>
+
+             <a class="behance-card cursor-zone" href="https://www.behance.net/gallery/257719465/Student-mental-health-app-design" target="_blank" rel="noopener" data-cursor="view ↗">
+          <div class="behance-thumb">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8669d1257719465.6ae1cb2c7bdfc.png" alt="mental health thumbnail" loading="lazy">
+            <span class="behance-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>View on Behance</span>
+          </div>
+          <div class="behance-body">
+            <span class="behance-cat">UI / UX case study</span>
+            <span class="behance-name">Student Mental Health App Case Study</span>
+          </div>
+        </a>
+
+        <a class="behance-card cursor-zone" href="https://www.behance.net/gallery/257245041/Bikanervala-rebranding" target="_blank" rel="noopener" data-cursor="view ↗">
+          <div class="behance-thumb">
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/a342b4257245041.6ad3b4a80de74.jpg" alt="BIKANERVALA rebranding thumbnail" loading="lazy">
+            <span class="behance-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>View on Behance</span>
+          </div>
+          <div class="behance-body">
+            <span class="behance-cat">Rebranding</span>
+            <span class="behance-name">BIKANERVALA rebranding</span>
+          </div>
+        </a>
+
+        <a class="behance-card cursor-zone" href="https://www.behance.net/gallery/252142347/KOKO-Restaurant-creatives" target="_blank" rel="noopener" data-cursor="view ↗">
+          <div class="behance-thumb">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/0c7b32252142347.6a47b7db74815.jpg" alt="KOKO Restaurant creatives thumbnail" loading="lazy">
+            <span class="behance-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>View on Behance</span>
+          </div>
+          <div class="behance-body">
+            <span class="behance-cat">Social &amp; brand creative</span>
+            <span class="behance-name">KOKO Restaurant creatives</span>
+          </div>
+        </a>
+
+        <a class="behance-card cursor-zone" href="https://www.behance.net/gallery/254249129/LUXE-email-post" target="_blank" rel="noopener" data-cursor="view ↗">
+          <div class="behance-thumb">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/2de120254249129.Y3JvcCwxMDgxLDg0NSwwLDQxNw.png" alt="LUXE email post thumbnail" loading="lazy">
+            <span class="behance-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>View on Behance</span>
+          </div>
+          <div class="behance-body">
+            <span class="behance-cat">Email / digital design</span>
+            <span class="behance-name">LUXE email post</span>
+          </div>
+        </a>
+
+        <a class="behance-card cursor-zone" href="https://www.behance.net/gallery/247971321/Advertisement" target="_blank" rel="noopener" data-cursor="view ↗">
+          <div class="behance-thumb">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/fa0297247971321.Y3JvcCwxMDgwLDg0NCwwLDExNw.png" alt="Advertisement thumbnail" loading="lazy">
+            <span class="behance-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>View on Behance</span>
+          </div>
+          <div class="behance-body">
+            <span class="behance-cat">Advertising creative</span>
+            <span class="behance-name">Advertisement</span>
+          </div>
+        </a>
+
+        <a class="behance-card cursor-zone" href="https://www.behance.net/gallery/242544565/Event-poster" target="_blank" rel="noopener" data-cursor="view ↗">
+          <div class="behance-thumb">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/1bccd3242544565.696f68f35b8c0.jpg" alt="Event poster thumbnail" loading="lazy">
+            <span class="behance-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>View on Behance</span>
+          </div>
+          <div class="behance-body">
+            <span class="behance-cat">Poster design</span>
+            <span class="behance-name">Event poster</span>
+          </div>
+        </a>
+
+        <a class="behance-card cursor-zone" href="https://www.behance.net/gallery/242538307/Infograhics" target="_blank" rel="noopener" data-cursor="view ↗">
+          <div class="behance-thumb">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/9edd62242538307.Y3JvcCwyMDI4LDE1ODcsMTEwLDA.png" alt="Infographics thumbnail" loading="lazy">
+            <span class="behance-view"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>View on Behance</span>
+          </div>
+          <div class="behance-body">
+            <span class="behance-cat">Infographic design</span>
+            <span class="behance-name">Infographics</span>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="behance-cta-row reveal">
+        <a class="behance-cta" href="https://www.behance.net/drishtiarora8" target="_blank" rel="noopener">
+          See all work on Behance
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <svg class="doodle-layers doodle-float-c section-doodle" viewBox="0 0 44 34" fill="none"><path d="M22 3L40 12L22 21L4 12L22 3Z" stroke="var(--violet)" stroke-width="2" stroke-linejoin="round"/><path d="M4 19L22 28L40 19" stroke="var(--violet)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="section-tag tag-font">what I bring</span>
+          <h2>Skills &amp; tools<svg class="heading-doodle" viewBox="0 0 150 14" fill="none"><path d="M2 8 Q 14 -1, 26 8 T 50 8 T 74 8 T 98 8 T 122 8 T 146 8" stroke="var(--coral)" stroke-width="3" stroke-linecap="round"/></svg></h2>
+        </div>
+        <p class="section-desc">M.Sc. Multimedia &amp; Design, Lovely Professional University — currently in progress.</p>
+      </div>
+
+      <div class="skills-block reveal">
+        <span class="mini-title">Technical</span>
+        <div class="tag-cloud">
+          <span class="tag-pill">Figma</span>
+          <span class="tag-pill">Adobe Photoshop</span>
+          <span class="tag-pill">Adobe Illustrator</span>
+          <span class="tag-pill">User Research</span>
+          <span class="tag-pill">Wireframing</span>
+          <span class="tag-pill">Usability Testing</span>
+          <span class="tag-pill">User Empathy</span>
+          <span class="tag-pill">Social Media Design</span>
+          <span class="tag-pill">Branding</span>
+          <span class="tag-pill">Problem Solving</span>
+        </div>
+      </div>
+
+      <div class="skills-block reveal">
+        <span class="mini-title">Soft skills</span>
+        <div class="tag-cloud">
+          <span class="tag-pill soft">Communication</span>
+          <span class="tag-pill soft">Problem-Solving</span>
+          <span class="tag-pill soft">Time Management</span>
+          <span class="tag-pill soft">Teamwork</span>
+          <span class="tag-pill soft">Leadership</span>
+        </div>
+      </div>
+
+      <!-- <div class="skills-block reveal">
+        <span class="mini-title">Certifications</span>
+        <div class="cert-card">
+          <span class="cert-name">Comprehensive UI/UX Design Course</span>
+          <span class="cert-issuer">UDEMY</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">Google UX Design</span>
+          <span class="cert-issuer">COURSERA</span>
+        </div>
+      </div> -->
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER / CONTACT -->
+<footer id="contact" class="cursor-zone" data-cursor="let's talk ✦">
+  <svg class="doodle-star doodle-float-a footer-doodle" viewBox="0 0 40 40" fill="none"><path d="M20 2L23.5 15.5L37 19L23.5 22.5L20 36L16.5 22.5L3 19L16.5 15.5L20 2Z" stroke="var(--coral)" stroke-width="2" stroke-linejoin="round"/></svg>
+  <div class="wrap footer-inner">
+    <span class="footer-tag tag-font">got a project, a role, or just a hello?</span>
+    <h2>Let's design something people actually enjoy using.</h2>
+    <div class="footer-links">
+      <a class="footer-link" href="mailto:drishtiaroraa15@gmail.com">✉ drishtiaroraa15@gmail.com</a>
+      <a class="footer-link" href="tel:+919855142324">☎ +91 98551 42324</a>
+      <a class="footer-link" href="https://www.linkedin.com/in/drishti-arora15" target="_blank" rel="noopener">linkedin</a>
+      <a class="footer-link" href="https://www.behance.net/drishtiarora8" target="_blank" rel="noopener">Behance</a>
+      <span class="footer-link" style="cursor:default;">📍 Jalandhar, Punjab</span>
+      <a href="drishti-cv.pdf" id="footerResumeBtn" class="footer-link footer-link-accent" download="">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 19h16"/></svg>
+        Download Resume
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Drishti Arora</span>
+      <span>Designed as a living portfolio — built to evolve with every new project.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+
+
+// ---------- scroll progress bar ----------
+const progressBar = document.getElementById('scroll-progress');
+function updateProgress(){
+  const h = document.documentElement;
+  const scrolled = h.scrollTop;
+  const max = h.scrollHeight - h.clientHeight;
+  progressBar.style.width = (max > 0 ? (scrolled/max)*100 : 0) + '%';
+}
+window.addEventListener('scroll', updateProgress, {passive:true});
+updateProgress();
+
+// ---------- header scroll state ----------
+const header = document.getElementById('siteHeader');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 40);
+}, {passive:true});
+
+// ---------- mobile nav ----------
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+// ---------- hero name letter animation ----------
+const heroNameEl = document.getElementById('heroName');
+const nameText = "DRISHTI ARORA";
+[...nameText].forEach((ch, i) => {
+  const span = document.createElement('span');
+  span.className = 'letter';
+  span.style.animationDelay = (0.15 + i * 0.035) + 's';
+  span.textContent = ch === ' ' ? '\u00A0\u00A0' : ch;
+  heroNameEl.appendChild(span);
+});
+setTimeout(() => document.getElementById('nameFrame').classList.add('framed'), 100);
+
+// ---------- marquee content ----------
+const skillWords = ["Figma","Adobe Photoshop","Adobe Illustrator","User Research","Wireframing","Usability Testing","User Empathy","Branding","Problem Solving"];
+const marqueeTrack = document.getElementById('marqueeTrack');
+function buildMarquee(){
+  let html = '';
+  for(let rep=0; rep<2; rep++){
+    skillWords.forEach(w=>{
+      html += `<span class="marquee-item">${w}<span class="sep">✦</span></span>`;
+    });
+  }
+  marqueeTrack.innerHTML = html;
+}
+buildMarquee();
+
+// ---------- scroll reveal ----------
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('is-visible');
+      io.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.15, rootMargin:'0px 0px -60px 0px'});
+revealEls.forEach(el=>io.observe(el));
+
+// ---------- doodle draw-in on scroll ----------
+const doodleEls = document.querySelectorAll('.heading-doodle');
+const doodleIo = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add('in-view');
+      doodleIo.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.4});
+doodleEls.forEach(el=>doodleIo.observe(el));
+
+// ---------- custom cursor ----------
+const cursorDot = document.getElementById('cursor-dot');
+const cursorLabel = document.getElementById('cursor-label');
+const zones = document.querySelectorAll('.cursor-zone');
+let mouseX=0, mouseY=0, dotX=0, dotY=0, labelX=0, labelY=0;
+let active = false;
+const isFinePointer = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+if(isFinePointer){
+  zones.forEach(zone=>{
+    zone.addEventListener('mouseenter', ()=>{
+      active = true;
+      document.body.classList.add('cursor-active');
+      cursorLabel.textContent = zone.dataset.cursor || '';
+    });
+    zone.addEventListener('mouseleave', ()=>{
+      active = false;
+      document.body.classList.remove('cursor-active');
+    });
+    zone.addEventListener('mousemove', (e)=>{
+      mouseX = e.clientX; mouseY = e.clientY;
+    });
+  });
+
+  function raf(){
+    dotX += (mouseX-dotX)*0.35;
+    dotY += (mouseY-dotY)*0.35;
+    labelX += (mouseX-labelX)*0.16;
+    labelY += (mouseY-labelY)*0.16;
+    cursorDot.style.transform = `translate(${dotX}px, ${dotY}px) translate(-50%,-50%)`;
+    cursorLabel.style.transform = `translate(${labelX}px, ${labelY}px) translate(6px,-40px)`;
+    requestAnimationFrame(raf);
+  }
+  raf();
+}
+
+// ---------- magnetic buttons ----------
+if(isFinePointer){
+  document.querySelectorAll('.magnetic').forEach(btn=>{
+    btn.addEventListener('mousemove', (e)=>{
+      const r = btn.getBoundingClientRect();
+      const x = e.clientX - r.left - r.width/2;
+      const y = e.clientY - r.top - r.height/2;
+      btn.style.transform = `translate(${x*0.22}px, ${y*0.35}px)`;
+    });
+    btn.addEventListener('mouseleave', ()=>{
+      btn.style.transform = 'translate(0,0)';
+    });
+  });
+
+  // ---------- 3D tilt on behance cards ----------
+  document.querySelectorAll('.behance-card').forEach(card=>{
+    card.addEventListener('mousemove', (e)=>{
+      const r = card.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = `translateY(-7px) rotateX(${(-py*7).toFixed(2)}deg) rotateY(${(px*9).toFixed(2)}deg)`;
+    });
+    card.addEventListener('mouseleave', ()=>{
+      card.style.transform = 'translateY(0) rotateX(0) rotateY(0)';
+    });
+  });
+}
+</script>
+
+</body>
+</html>
